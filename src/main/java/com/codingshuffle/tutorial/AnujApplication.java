@@ -11,7 +11,6 @@ public class AnujApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AnujApplication.class, args);
-
 	}
 
 	@Override
@@ -19,5 +18,4 @@ public class AnujApplication implements CommandLineRunner {
 		prodDB = new ProdDB();
 		System.out.println(prodDB.getData());
 	}
-
 }
