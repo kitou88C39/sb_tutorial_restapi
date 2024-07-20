@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AnujApplication implements CommandLineRunner {
 
-	ProdDB prodDB;
+	DB db;
 
 	public static void main(String[] args) {
 		SpringApplication.run(AnujApplication.class, args);
@@ -15,7 +15,7 @@ public class AnujApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		prodDB = new ProdDB();
-		System.out.println(prodDB.getData());
+		db = new ProdDB();
+		System.out.println(db.getData());
 	}
 }
