@@ -12,12 +12,12 @@ public class AnujApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(AnujApplication.class, args);
 
-		prodDB = new ProdDB();
-		System.out.println(prodDB.getData());
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
+		prodDB = new ProdDB();
+		System.out.println(prodDB.getData());
 	}
 
 }
