@@ -1,0 +1,7 @@
+package com.codingshuffle.tutorial;
+
+public class DB {
+    public String getData() {
+        return "DB Data";
+    }
+}
