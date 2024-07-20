@@ -16,4 +16,8 @@ public class AnujApplication implements CommandLineRunner {
 		System.out.println(prodDB.getData());
 	}
 
+	@Override
+	public void run(String... args) throws Exception {
+	}
+
 }
