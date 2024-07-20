@@ -8,6 +8,9 @@ public class AnujApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AnujApplication.class, args);
+
+		ProdDB prodDB = new ProdDB();
+		System.out.println(prodDB.getData());
 	}
 
 }
