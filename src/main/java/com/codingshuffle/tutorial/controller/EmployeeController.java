@@ -2,7 +2,6 @@ package com.codingshuffle.tutorial.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 //Operation
 //GET /employees
@@ -13,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class EmployeeController {
 
     @GetMapping(path = "/employees")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
+    public String getEmployees() {
+        return "Hello World";
     }
 
 }
