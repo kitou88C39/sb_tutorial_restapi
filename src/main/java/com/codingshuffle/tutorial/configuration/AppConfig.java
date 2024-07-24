@@ -17,7 +17,7 @@ public class AppConfig {
     }
 
     @Bean
-    @ConditionalOnProperty(name = "project.name", havingValue = "development")
+    @ConditionalOnProperty(name = "project.name", havingValue = "production")
     public DB getProdDBBean() {
         return new ProdDB();
     }
