@@ -32,4 +32,12 @@ public class EmployeeDTO {
     public void setDateOfJoining(LocalDate dateOfJoining) {
         this.dateOfJoining = dateOfJoining;
     }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean isActive) {
+        this.isActive = isActive;
+    }
 }
