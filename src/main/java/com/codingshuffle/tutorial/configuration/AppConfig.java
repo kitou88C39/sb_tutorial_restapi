@@ -10,7 +10,11 @@ public class AppConfig {
 
     @Bean
     public DB getDBBean() {
-        return new ProdDB();
+        return new DevDB();
     }
 
+    @Bean
+    public DB getDBBean() {
+        return new DevDB();
+    }
 }
