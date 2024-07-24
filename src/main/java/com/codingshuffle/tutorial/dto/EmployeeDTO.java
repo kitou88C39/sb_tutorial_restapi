@@ -2,6 +2,7 @@ package com.codingshuffle.tutorial.dto;
 
 import java.time.LocalDate;
 
+@Data
 public class EmployeeDTO {
 
     private Long id;
@@ -9,42 +10,43 @@ public class EmployeeDTO {
     private LocalDate dateOfJoining;
     private boolean isActive;
 
-    public EmployeeDTO(Long id, String name, LocalDate dateOfJoining, boolean isActive) {
-        this.id = id;
-        this.name = name;
-        this.dateOfJoining = dateOfJoining;
-        this.isActive = isActive;
-    }
+    // public EmployeeDTO(Long id, String name, LocalDate dateOfJoining, boolean
+    // isActive) {
+    // this.id = id;
+    // this.name = name;
+    // this.dateOfJoining = dateOfJoining;
+    // this.isActive = isActive;
+    // }
 
-    public Long getId() {
-        return id;
-    }
+    // public Long getId() {
+    // return id;
+    // }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    // public void setId(Long id) {
+    // this.id = id;
+    // }
 
-    public String getName() {
-        return name;
-    }
+    // public String getName() {
+    // return name;
+    // }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    // public void setName(String name) {
+    // this.name = name;
+    // }
 
-    public LocalDate getDateOfJoining() {
-        return dateOfJoining;
-    }
+    // public LocalDate getDateOfJoining() {
+    // return dateOfJoining;
+    // }
 
-    public void setDateOfJoining(LocalDate dateOfJoining) {
-        this.dateOfJoining = dateOfJoining;
-    }
+    // public void setDateOfJoining(LocalDate dateOfJoining) {
+    // this.dateOfJoining = dateOfJoining;
+    // }
 
-    public boolean isActive() {
-        return isActive;
-    }
+    // public boolean isActive() {
+    // return isActive;
+    // }
 
-    public void setActive(boolean isActive) {
-        this.isActive = isActive;
-    }
+    // public void setActive(boolean isActive) {
+    // this.isActive = isActive;
+    // }
 }
