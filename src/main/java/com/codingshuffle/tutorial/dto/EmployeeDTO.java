@@ -9,6 +9,13 @@ public class EmployeeDTO {
     private LocalDate dateOfJoining;
     private boolean isActive;
 
+    public EmployeeDTO(Long id, String name, LocalDate dateOfJoining, boolean isActive) {
+        this.id = id;
+        this.name = name;
+        this.dateOfJoining = dateOfJoining;
+        this.isActive = isActive;
+    }
+
     public Long getId() {
         return id;
     }
