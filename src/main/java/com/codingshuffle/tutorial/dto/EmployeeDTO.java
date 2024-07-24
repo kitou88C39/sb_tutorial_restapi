@@ -25,4 +25,11 @@ public class EmployeeDTO {
         this.name = name;
     }
 
+    public LocalDate getDateOfJoining() {
+        return dateOfJoining;
+    }
+
+    public void setDateOfJoining(LocalDate dateOfJoining) {
+        this.dateOfJoining = dateOfJoining;
+    }
 }
