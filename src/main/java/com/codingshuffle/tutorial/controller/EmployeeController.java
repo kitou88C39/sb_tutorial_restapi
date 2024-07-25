@@ -28,8 +28,8 @@ public class EmployeeController {
     }
 
     @PostMapping(path = "/employees")
-    public String getData(@RequestBody EmployeeDTO employeeDTO) {
-
+    public String createNewEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        return employeeService.createNewEmployee(employeeDTO);
     }
 
 }
