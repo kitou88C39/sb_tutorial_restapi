@@ -6,6 +6,8 @@ package com.codingshuffle.tutorial.controller;
 //DELETE /employees/{id}
 
 import com.codingshuffle.tutorial.dto.EmployeeDTO;
+import com.codingshuffle.tutorial.service.EmployeeService;
+
 import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +17,12 @@ import java.time.LocalDate;
 
 @RestController
 public class EmployeeController {
+
+    private final EmployeeService employeeService;
+
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
 
     @GetMapping(path = "/employees/{id}")
     public EmployeeDTO getEmployees(@PathVariable("id") Long employeeId) {
