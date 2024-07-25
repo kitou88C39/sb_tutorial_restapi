@@ -1,6 +1,9 @@
 package com.codingshuffle.tutorial.controller;
 
 import com.codingshuffle.tutorial.dto.EmployeeDTO;
+
+import jakarta.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +26,7 @@ public class EmployeeController {
     }
 
     @GetMapping(path = "/employees")
-    public String getData() {
+    public String getData(@PathParam("sortBy") String sortBy) {
         return "Hello";
     }
 
