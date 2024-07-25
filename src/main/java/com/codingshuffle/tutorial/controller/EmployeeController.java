@@ -26,8 +26,8 @@ public class EmployeeController {
     }
 
     @GetMapping(path = "/employees")
-    public String getData(@PathParam("sortBy") String sortBy) {
-        return "Hello";
+    public String getData(@PathParam("sortBy") String sortBy, @PathParam("limit") Integer limit) {
+        return "Hello " + sortBy;
     }
 
 }
