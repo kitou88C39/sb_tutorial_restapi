@@ -29,9 +29,9 @@ public class EmployeeController {
         return employeeService.getEmployeeById(employeeId);
     }
 
-    @GetMapping(path = "/employees")
-    public String getData(@PathParam("sortBy") String sortBy, @PathParam("limit") Integer limit) {
-        return "Hello " + sortBy + " " + limit;
+    @PostMapping(path = "/employees")
+    public String getData() {
+
     }
 
 }
