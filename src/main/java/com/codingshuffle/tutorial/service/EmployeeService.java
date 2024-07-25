@@ -9,7 +9,11 @@ import org.springframework.stereotype.Service;
 public class EmployeeService {
 
     @Autowired
-    EmployeeRepository EmployeeRepository;
+    final EmployeeRepository employeeRepository;
+
+    public EmployeeService(EmployeeRepository employeeRepository) {
+        this.EmployeeRepository = employeeRepository;
+    }
 
     public EmployeeDTO getEmployeeById(Long id) {
 
