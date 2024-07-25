@@ -1,5 +1,10 @@
 package com.codingshuffle.tutorial.entities;
 
-public class EmployeeEntity {
+import java.time.LocalDate;
 
+public class EmployeeEntity {
+    private Long id;
+    private String name;
+    private LocalDate dateOfJoining;
+    private boolean isActive;
 }
