@@ -1,21 +1,17 @@
 package com.codingshuffle.tutorial.controller;
 
+//Operation
+//GET /employees
+//POST /employees
+//DELETE /employees/{id}
+
 import com.codingshuffle.tutorial.dto.EmployeeDTO;
-
 import jakarta.websocket.server.PathParam;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
-//import java.util.Date;
-import org.springframework.web.bind.annotation.RequestParam;
-
-//Operation
-//GET /employees
-//POST /employees
-//DELETE /employees/{id}
 
 @RestController
 public class EmployeeController {
