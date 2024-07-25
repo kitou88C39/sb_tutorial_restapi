@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 //import java.util.Date;
+import org.springframework.web.bind.annotation.RequestParam;
 
 //Operation
 //GET /employees
@@ -17,8 +18,13 @@ import java.time.LocalDate;
 public class EmployeeController {
 
     @GetMapping(path = "/employees/{id}")
-    public EmployeeDTO getEmployees(@PathVariable Long id) {
-        return new EmployeeDTO(id, "Anuj", LocalDate.of(2024, 1, 1), true);
+    public EmployeeDTO getEmployees(@PathVariable("id") Long employeeId) {
+        return new EmployeeDTO(employeeId, "Anuj", LocalDate.of(2024, 1, 1), true);
+    }
+
+    @GetMapping(path = "/employees")
+    public String getData() {
+        return "Hello";
     }
 
 }
