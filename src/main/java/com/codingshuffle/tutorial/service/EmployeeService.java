@@ -16,11 +16,9 @@ public class EmployeeService {
 
     public EmployeeDTO getEmployeeById(Long id) {
         EmployeeEntity employeeEntity = employeeRepository.getById(id);
-        return new EmployeeDTO(employeeEntity.getId(), employeeEntity.getName(), employeeEntity.getDateOfJoining(),
-                employeeEntity.isActive());
+        return 
+                
     }
-
-    public EmployeeDTO createDTO
 
     createNewEmployee(EmployeeDTO employeeDTO){
         
