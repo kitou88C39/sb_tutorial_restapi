@@ -20,4 +20,9 @@ public class EmployeeService {
                 employeeEntity.isActive());
     }
 
+    public EmployeeDTO createDTO
+
+    createNewEmployee(EmployeeDTO employeeDTO){
+        
+    }
 }
