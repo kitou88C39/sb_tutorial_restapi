@@ -10,6 +10,7 @@ import com.codingshuffle.tutorial.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(path = "/employees")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
