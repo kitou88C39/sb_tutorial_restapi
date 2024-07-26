@@ -7,11 +7,7 @@ package com.codingshuffle.tutorial.controller;
 
 import com.codingshuffle.tutorial.dto.EmployeeDTO;
 import com.codingshuffle.tutorial.service.EmployeeService;
-
-import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.*;
-
-//import java.time.LocalDate;
 
 @RestController
 public class EmployeeController {
