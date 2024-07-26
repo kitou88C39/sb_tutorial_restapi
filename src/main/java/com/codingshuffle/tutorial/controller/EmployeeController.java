@@ -35,4 +35,9 @@ public class EmployeeController {
         return employeeService.createNewEmployee(employeeDTO);
     }
 
+    @DeleteMapping(path = "/{id}")
+    public boolean deleteEmployeeById(@PathVariable Long id) {
+        employeeService.deleteEmployeeById(id);
+    }
+
 }
