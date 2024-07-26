@@ -13,8 +13,9 @@ public class EmployeeService {
     final EmployeeRepository employeeRepository;
     final ModelMapper modelMapper;
 
-    public EmployeeService(EmployeeRepository employeeRepository) {
+    public EmployeeService(EmployeeRepository employeeRepository, ModelMapper modelMapper) {
         this.employeeRepository = employeeRepository;
+        this.modelMapper = modelMapper;
     }
 
     public EmployeeDTO getEmployeeById(Long id) {
@@ -23,7 +24,7 @@ public class EmployeeService {
                 
     }
 
-    createNewEmployee(EmployeeDTO employeeDTO){
-        
+    public EmployeeDTO createNewEmployee(EmployeeDTO employeeDTO) {
+
     }
 }
