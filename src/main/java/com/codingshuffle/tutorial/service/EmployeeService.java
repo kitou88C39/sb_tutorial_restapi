@@ -25,7 +25,7 @@ public class EmployeeService {
     }
 
     public EmployeeDTO createNewEmployee(EmployeeDTO employeeDTO) {
-        EmployeeEntity employeeEntity
+        return modelMapper.map(employeeRepository.save(employeeEntity), EmployeeDTO.class);
 
     }
 }
