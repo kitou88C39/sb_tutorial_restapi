@@ -41,4 +41,8 @@ public class EmployeeService {
                 .map(employeeEntity -> modelMapper.map(employeeEntity, EmployeeDTO.class))
                 .collect(Collectors.toList());
     }
+
+    public boolean deleteEmployeeById(Long id) {
+        employeeRepository.deleteById(id);
+    }
 }
