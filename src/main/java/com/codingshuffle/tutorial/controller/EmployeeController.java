@@ -19,13 +19,13 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @GetMapping(path = "/employees/{id}")
+    @GetMapping(path = "/{id}")
     public EmployeeDTO getEmployeeById(@PathVariable("id") Long employeeId) {
         return employeeService.getEmployeeById(employeeId);
     }
 
-    @PostMapping(path = "/employees")
-    public String createNewEmployee(@RequestBody EmployeeDTO employeeDTO) {
+    @PostMapping
+    public EmployeeDTO createNewEmployee(@RequestBody EmployeeDTO employeeDTO) {
         return employeeService.createNewEmployee(employeeDTO);
     }
 
