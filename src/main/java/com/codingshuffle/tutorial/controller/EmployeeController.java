@@ -8,6 +8,7 @@ package com.codingshuffle.tutorial.controller;
 import com.codingshuffle.tutorial.dto.EmployeeDTO;
 import com.codingshuffle.tutorial.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "/employees")
@@ -17,6 +18,11 @@ public class EmployeeController {
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
+    }
+
+    @GetMapping("path")
+    public List<EmployeeDTO> getAllEmployee() {
+        return employeeService.getAllEmployees();
     }
 
     @GetMapping(path = "/{id}")
