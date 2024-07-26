@@ -20,7 +20,7 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @GetMapping("path")
+    @GetMapping
     public List<EmployeeDTO> getAllEmployee() {
         return employeeService.getAllEmployees();
     }
@@ -37,7 +37,7 @@ public class EmployeeController {
 
     @DeleteMapping(path = "/{id}")
     public boolean deleteEmployeeById(@PathVariable Long id) {
-        employeeService.deleteEmployeeById(id);
+        return employeeService.deleteEmployeeById(id);
     }
 
 }
