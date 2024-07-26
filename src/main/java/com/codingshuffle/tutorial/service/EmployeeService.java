@@ -4,6 +4,7 @@ import com.codingshuffle.tutorial.dto.EmployeeDTO;
 import com.codingshuffle.tutorial.entities.EmployeeEntity;
 import com.codingshuffle.tutorial.repositories.EmployeeRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,8 +35,12 @@ public class EmployeeService {
     }
 
     public List<EmployeeDTO> getAllEmployee() {
-        return employeeRepository.findAll().stream()
-                .map(employeeEntity -> modelMapper.map(employeeEntity, EmployeeDTO.class))
-                .collect(Collectors.toList());
+        List<EmployeeDTO> list = new ArrayList<>();
+        for (EmployeeEntity employeeEntity : employeeRepository
+                .findAll()) {
+            EmployeeDTO map = modelMapper.map(employeeEntity, EmployeeDTO.class);
+            list.add(map);
+        }
+        return list;
     }
 }
