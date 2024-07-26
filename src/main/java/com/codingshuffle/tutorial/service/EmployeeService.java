@@ -20,11 +20,12 @@ public class EmployeeService {
 
     public EmployeeDTO getEmployeeById(Long id) {
         EmployeeEntity employeeEntity = employeeRepository.getById(id);
-        return 
-                
+        return modelMapper.map(employeeEntity, EmployeeDTO.class);
+
     }
 
     public EmployeeDTO createNewEmployee(EmployeeDTO employeeDTO) {
+        EmployeeEntity employeeEntity
 
     }
 }
